@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phone Hack Simulator (visual)</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="phone" role="article" aria-label="Visual hacking simulator">
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="matrix"></div>
+        <div class="scanline" aria-hidden="true"></div>
+        <header>
+          <div class="title">PHONESIM • visual</div>
+          <div class="status">Session • local</div>
+        </header>
+
+        <div class="log" aria-live="polite">
+          <div class="lines">
+            <div class="line" data-order="1">Initializing connection to target device...</div>
+            <div class="line" data-order="2">Resolving device identifier: PHONE-01A3</div>
+            <div class="line" data-order="3">Checking ports... [ TCP: OPEN ] [ BLUETOOTH: DISABLED ]</div>
+            <div class="line" data-order="4">Enumerating installed apps: 12 found</div>
+            <div class="line" data-order="5">Bypassing lockscreen interface... <span style="color:var(--muted)">simulated</span></div>
+            <div class="line" data-order="6">Extracting contacts (preview): Alice, Omar, Lina...</div>
+            <div class="line" data-order="7">Decrypting sample messages... <span style="color:var(--muted)">0%</span></div>
+            <div class="line" data-order="8">Attempting privilege escalation (visual only)...</div>
+            <div class="line" data-order="9">Operation queued — progress bar below</div>
+          </div>
+
+          <div class="progress-wrap">
+            <div class="bar"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div></div>
+            <div class="status-big">Unlocking: <strong>Simulating...</strong></div>
+            <div class="meta">Note: This is a harmless visual simulation — no real hacking actions are performed.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
